@@ -1,15 +1,15 @@
-version: "3.9"
 services:
   postgres:
     image: postgres:15
-    container_name: postgres_db
+    container_name: footballleague_postgres
+    environment:
+      POSTGRES_USER: pawel
+      POSTGRES_PASSWORD: fliga
+      POSTGRES_DB: footballleague
     ports:
       - "5432:5432"
-    environment:
-      - POSTGRES_USER=pawel
-      - POSTGRES_PASSWORD=fliga
-      - POSTGRES_DB=leaguedatabase
     volumes:
-      - pgdata:/var/lib/postgresql/data
+      - footballleague_data:/var/lib/postgresql/data
+
 volumes:
-  pgdata:
+  footballleague_data:
