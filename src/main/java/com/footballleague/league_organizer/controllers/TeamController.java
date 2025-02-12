@@ -2,6 +2,7 @@ package com.footballleague.league_organizer.controllers;
 
 import com.footballleague.league_organizer.entities.Team;
 import com.footballleague.league_organizer.services.TeamService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -32,6 +33,6 @@ public class TeamController {
     @PostMapping
     public ResponseEntity<Team> addTeam(@RequestBody Team team) {
         Team createdTeam = teamService.createTeam(team);
-        return ResponseEntity.ok(createdTeam);
+        return ResponseEntity.status(HttpStatus.CREATED).body(createdTeam);
     }
 }
