@@ -13,7 +13,7 @@ import lombok.Setter;
 public class Team {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
 
     @Column(name = "name", nullable = false)
     private String name;
