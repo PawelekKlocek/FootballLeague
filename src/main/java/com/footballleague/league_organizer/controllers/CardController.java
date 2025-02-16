@@ -3,9 +3,8 @@ package com.footballleague.league_organizer.controllers;
 import com.footballleague.league_organizer.entities.Card;
 import com.footballleague.league_organizer.entities.Team;
 import com.footballleague.league_organizer.services.CardService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -22,5 +21,10 @@ public class CardController {
     @GetMapping
     public List<Card> getAllCards() {
         return cardService.getAllCards();
+    }
+    @PostMapping
+    public ResponseEntity<Card> addCard(@RequestBody Card card) {
+        Card createdCard = cardService.addCard(card);
+        return ResponseEntity.ok(createdCard);
     }
 }

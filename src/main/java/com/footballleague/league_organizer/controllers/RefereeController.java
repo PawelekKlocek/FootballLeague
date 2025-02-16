@@ -16,21 +16,21 @@ import java.util.Optional;
 
 public class RefereeController {
     private final RefereeService refereeService;
-    private final RefereeRepository refereeRepository;
 
-    public RefereeController(RefereeService refereeService, RefereeRepository refereeRepository) {
+
+    public RefereeController(RefereeService refereeService) {
         this.refereeService = refereeService;
-        this.refereeRepository = refereeRepository;
+
     }
     @GetMapping
     public List<Referee> getAllReferees() {
-        return refereeRepository.findAll();
+        return refereeService.getAllReferees();
     }
 
 
     @GetMapping("/{id}")
     public ResponseEntity<Optional<Referee>> getRefereeById(@PathVariable Long id) {
-        Optional<Referee> referee = refereeRepository.findById(id);
+        Optional<Referee> referee = refereeService.getRefereeById(id);
         return ResponseEntity.ok(referee);
     }
 

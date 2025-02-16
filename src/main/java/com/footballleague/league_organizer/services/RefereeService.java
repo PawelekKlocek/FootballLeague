@@ -14,7 +14,7 @@ import java.util.Optional;
 @Slf4j
 @RequiredArgsConstructor
 public class RefereeService {
-    @Autowired
+    
     private final RefereeRepository refereeRepository;
 
     public List<Referee> getAllReferees() {
