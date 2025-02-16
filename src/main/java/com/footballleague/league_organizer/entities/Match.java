@@ -18,18 +18,18 @@ public class Match {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "league_id", nullable = false)
     private League league;
 
     @Column(name = "match_date")
     private LocalDateTime matchDate;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "team1_id", nullable = false)
     private Team team1;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "team2_id", nullable = false)
     private Team team2;
 
@@ -39,11 +39,11 @@ public class Match {
     @Column(name = "team2_score")
     private int team2Score;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "referee_id", nullable = false)
-    private User referee;
+    private Referee referee;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "pitch_id", nullable = false)
     private Pitch pitch;
 
