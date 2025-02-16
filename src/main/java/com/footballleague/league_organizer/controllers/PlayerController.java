@@ -30,6 +30,11 @@ public class PlayerController {
         return playerService.getPlayersByName(name);
     }
 
+    @PostMapping
+    public ResponseEntity<Player> addPlayer(@RequestBody Player player) {
+        Player newPlayer = playerService.addPlayer(player);
+        return ResponseEntity.ok(newPlayer);
+    }
 
 
 

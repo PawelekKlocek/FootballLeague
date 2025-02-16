@@ -22,6 +22,10 @@ public class PlayerService {
         return playerRepository.findByName(name);
     }
 
+    public Player addPlayer(Player player) {
+        return playerRepository.save(player);
+    }
+
 
 
 }
