@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
 public class League {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
 
     @Column(name = "name")
     private String name;
