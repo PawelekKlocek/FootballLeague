@@ -35,6 +35,7 @@ public class UserController {
         if (userRepository.existsByEmail(user.getEmail())) {
             return ResponseEntity.badRequest().body(null);
         }
+        user.setRole("user");
         return ResponseEntity.ok(userRepository.save(user));
     }
 
