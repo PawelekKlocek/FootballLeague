@@ -1,9 +1,48 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaUser, FaEnvelope, FaLock } from "react-icons/fa";
 import './LoginForm.css';
 
 const LoginForm = () => {
     const [action, setAction] = useState('Sign Up');
+    const [users, setUsers] = useState([]);
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleSubmit = async () => {
+
+        const userData = {
+            firstName,
+            lastName,
+            email,
+            password
+        };
+
+        // Send data to backend
+        try {
+            const response = await fetch('http://localhost:8080/api/users', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(userData),
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                console.log('User registered:', data);
+                alert('User registered successfully!');
+            } else {
+                console.error('Failed to register user');
+                alert('Error: User could not be registered.');
+            }
+        } catch (error) {
+            console.error('Error submitting user data:', error);
+            alert('Error: Something went wrong!');
+        }
+    };
+
 
     return (
         <div className="container">
@@ -13,20 +52,47 @@ const LoginForm = () => {
             </div>
             <div className="inputs">
                 {action === "Login" ? null : (
-                    <div className="input">
-                        <FaUser className="icon" />
-                        <input type="text" placeholder="Name"/>
+                    <div className="inputs2">
+                        <div className="input">
+                            <FaUser className="icon" />
+                            <input
+                                type="text"
+                                placeholder="First Name"
+                                value={firstName}
+                                onChange={(e) => setFirstName(e.target.value)}
+                            />
+                        </div>
+
+                        <div className="input">
+                            <FaUser className="icon" />
+                            <input
+                                type="text"
+                                placeholder="Last Name"
+                                value={lastName}
+                                onChange={(e) => setLastName(e.target.value)}
+                            />
+                        </div>
                     </div>
                 )}
 
                 <div className="input">
                     <FaEnvelope className="icon" />
-                    <input type="email" placeholder="Email"/>
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
                 </div>
 
                 <div className="input">
                     <FaLock className="icon" />
-                    <input type="password" placeholder="Password"/>
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
                 </div>
             </div>
 
@@ -44,6 +110,14 @@ const LoginForm = () => {
                     Login
                 </div>
             </div>
+
+            {action === "Sign Up" && (
+                <div className="submit-container">
+                    <button onClick={handleSubmit} className="submit">
+                        Register
+                    </button>
+                </div>
+            )}
         </div>
     );
 };
