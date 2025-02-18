@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { FaUser, FaEnvelope, FaLock } from "react-icons/fa";
 import './LoginForm.css';
 
 const LoginForm = () => {
-    const [action, setAction] = useState('Sign Up');
-    const [users, setUsers] = useState([]);
+    const [action, setAction] = useState('Login');
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const handleSubmit = async () => {
+        if (action !== "Sign Up") return;
 
         const userData = {
             firstName,
@@ -19,7 +19,6 @@ const LoginForm = () => {
             password
         };
 
-        // Send data to backend
         try {
             const response = await fetch('http://localhost:8080/api/users', {
                 method: 'POST',
@@ -42,7 +41,6 @@ const LoginForm = () => {
             alert('Error: Something went wrong!');
         }
     };
-
 
     return (
         <div className="container">
@@ -104,20 +102,16 @@ const LoginForm = () => {
 
             <div className="submit-container">
                 <div className={action === "Login" ? "submit gray" : "submit"} onClick={() => setAction("Sign Up")}>
-                    Sign Up
+                    <div >
+                        <button onClick={handleSubmit} className={action === "Login" ? "submit gray" : "submit"}>
+                            Register
+                        </button>
+                    </div>
                 </div>
                 <div className={action === "Sign Up" ? "submit gray" : "submit"} onClick={() => setAction("Login")}>
                     Login
                 </div>
             </div>
-
-            {action === "Sign Up" && (
-                <div className="submit-container">
-                    <button onClick={handleSubmit} className="submit">
-                        Register
-                    </button>
-                </div>
-            )}
         </div>
     );
 };
