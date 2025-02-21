@@ -42,6 +42,36 @@ const LoginForm = () => {
         }
     };
 
+    const handleLogin = async () => {
+        if (action !== "Login") return;
+
+        try {
+            const response = await fetch('http://localhost:8080/api/users', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error('Failed to fetch users');
+            }
+
+            const users = await response.json();
+
+            const user = users.find(user => user.email === email && user.password === password);
+
+            if (user) {
+                alert('Login successful!');
+            } else {
+                alert('Invalid email or password');
+            }
+        } catch (error) {
+            alert('Error: Something went wrong!');
+        }
+    };
+
+
     return (
         <div className="container">
             <div className="header">
@@ -96,7 +126,8 @@ const LoginForm = () => {
 
             {action === "Sign Up" ? null : (
                 <div className="forgot-password">
-                    Forgot Password?<span> Click Here</span>
+                    Forgot Password? <span>Click Here</span>
+
                 </div>
             )}
 
@@ -109,7 +140,11 @@ const LoginForm = () => {
                     </div>
                 </div>
                 <div className={action === "Sign Up" ? "submit gray" : "submit"} onClick={() => setAction("Login")}>
-                    Login
+                    <div >
+                        <button onClick={handleLogin} className={action === "Sign Up" ? "submit gray" : "submit"}>
+                            Login
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
