@@ -30,16 +30,7 @@ public class User {
     @Column(name = "password", nullable = false)
     private String password;
 
-    @Column(name = "phone_nr")
-    private String phoneNr;
-
     @Column(name = "role", nullable = false)
     private String role;
 
-    @Column(name = "created_at")
-    private LocalDateTime createdAt;
-
-    @OneToOne(mappedBy = "captain", fetch = FetchType.LAZY)
-    @ToString.Exclude
-    private Team team;
 }

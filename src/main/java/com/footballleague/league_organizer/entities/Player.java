@@ -29,7 +29,5 @@ public class Player {
     @Column(name = "position")
     private String position;
 
-    @Column(name = "join_date")
-    private LocalDateTime joinDate;
 }
 
