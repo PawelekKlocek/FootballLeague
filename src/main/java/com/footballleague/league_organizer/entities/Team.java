@@ -12,7 +12,7 @@ import lombok.Setter;
 @Table(name = "teams")
 public class Team {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "name", nullable = false)
@@ -21,11 +21,7 @@ public class Team {
     @Column(name = "city_name")
     private String cityName;
 
-    @Column(name = "category")
-    private String category;
 
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "captain_id")
-    private User captain;
+
 
 }

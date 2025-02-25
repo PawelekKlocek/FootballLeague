@@ -18,13 +18,9 @@ public class Referee {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @OneToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    @Column(name = "first_name", nullable = false)
+    private String firstName;
 
-    @Column(name = "license")
-    private String license;
-
-    @Column(name = "years_of_experience")
-    private int experience;
+    @Column(name = "last_name", nullable = false)
+    private String lastName;
 }
