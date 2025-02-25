@@ -4,9 +4,6 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
-
-import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "users")

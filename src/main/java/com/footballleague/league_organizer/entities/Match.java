@@ -13,7 +13,6 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @ToString
 public class Match {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;

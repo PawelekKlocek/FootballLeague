@@ -3,8 +3,6 @@ package com.footballleague.league_organizer.entities;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.time.LocalDateTime;
-
 @Entity
 @Table(name = "cards")
 @Getter
@@ -13,7 +11,6 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @ToString
 public class Card {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

@@ -4,14 +4,11 @@ import com.footballleague.league_organizer.entities.User;
 import com.footballleague.league_organizer.repositories.UserRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("api/users")
 public class UserController {
-
     private final UserRepository userRepository;
 
     public UserController(UserRepository userRepository) {

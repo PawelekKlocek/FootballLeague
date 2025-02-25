@@ -5,15 +5,12 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
-import java.time.LocalDateTime;
-
 @Entity
 @RequiredArgsConstructor
 @Getter
 @Setter
 @Table(name = "player")
 public class Player {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;

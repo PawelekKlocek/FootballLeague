@@ -10,7 +10,6 @@ import lombok.*;
 @AllArgsConstructor
 @ToString
 public class Goal {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -28,5 +27,4 @@ public class Goal {
 
     @Column(name = "type")
     private String type;
-
 }

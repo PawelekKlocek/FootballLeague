@@ -20,8 +20,4 @@ public class Team {
 
     @Column(name = "city_name")
     private String cityName;
-
-
-
-
 }

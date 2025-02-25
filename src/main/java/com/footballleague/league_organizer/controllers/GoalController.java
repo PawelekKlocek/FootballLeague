@@ -1,6 +1,5 @@
 package com.footballleague.league_organizer.controllers;
 
-
 import com.footballleague.league_organizer.entities.Goal;
 import com.footballleague.league_organizer.services.GoalService;
 import org.springframework.web.bind.annotation.GetMapping;

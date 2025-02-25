@@ -4,7 +4,6 @@ import com.footballleague.league_organizer.entities.Match;
 import com.footballleague.league_organizer.services.MatchService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 import java.util.Optional;
 
