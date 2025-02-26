@@ -20,4 +20,7 @@ public class Team {
 
     @Column(name = "city_name")
     private String cityName;
+
+    @Column(name = "emblemPath")
+    private String emblemPath;
 }

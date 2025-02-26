@@ -19,6 +19,6 @@ public class StandingController {
 
     @GetMapping
     public List<Standing> getStandings() {
-        return standingService .getAllStandings();
+        return standingService.getAllStandings();
     }
 }

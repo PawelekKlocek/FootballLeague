@@ -2,6 +2,7 @@ package com.footballleague.league_organizer.controllers;
 
 import com.footballleague.league_organizer.entities.League;
 import com.footballleague.league_organizer.services.LeagueService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -9,13 +10,10 @@ import java.util.List;
 import java.util.Optional;
 @RequestMapping("api/leagues")
 @RestController
+@RequiredArgsConstructor
 public class LeagueController {
     private final LeagueService leagueService;
-
-    public LeagueController(LeagueService leagueService) {
-        this.leagueService = leagueService;
-    }
-
+    
     @GetMapping
     public List<League> getAllLeagues(){
         return leagueService.getAllLeagues();

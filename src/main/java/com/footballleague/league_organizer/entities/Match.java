@@ -39,7 +39,7 @@ public class Match {
     private int team2Score;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "referee_id", nullable = false)
+    @JoinColumn(name = "referee_id")
     private Referee referee;
 
     @ManyToOne(fetch = FetchType.EAGER)
