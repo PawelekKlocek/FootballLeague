@@ -1,6 +1,7 @@
 package com.footballleague.league_organizer.controllers;
 
 import com.footballleague.league_organizer.entities.Referee;
+import com.footballleague.league_organizer.entities.Team;
 import com.footballleague.league_organizer.services.RefereeService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -34,4 +35,9 @@ public class RefereeController {
         Referee createdreferee = refereeService.addReferee(referee);
         return ResponseEntity.ok(createdreferee);
     }
+    @GetMapping("/referee-name/{name}")
+    public List<Referee> getRefereeByName(@PathVariable String name) {
+        return refereeService.getRefereeByName(name);
+    }
+
 }

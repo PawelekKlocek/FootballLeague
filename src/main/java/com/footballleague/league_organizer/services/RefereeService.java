@@ -1,6 +1,7 @@
 package com.footballleague.league_organizer.services;
 
 import com.footballleague.league_organizer.entities.Referee;
+import com.footballleague.league_organizer.entities.Team;
 import com.footballleague.league_organizer.repositories.RefereeRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -25,6 +26,9 @@ public class RefereeService {
     }
     public Referee addReferee(Referee referee) {
         return refereeRepository.save(referee);
+    }
+    public List<Referee> getRefereeByName(String name) {
+        return refereeRepository.findByFirstName(name);
     }
 
 }
