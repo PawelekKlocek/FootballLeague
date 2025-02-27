@@ -13,7 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/search")
-@CrossOrigin(origins = "http://localhost:3000") // pozwolenie na żądania z frontendu
+@CrossOrigin(origins = "http://localhost:3000")
 public class SearchController {
     private final PlayerService playerService;
     private final RefereeService refereeService;
