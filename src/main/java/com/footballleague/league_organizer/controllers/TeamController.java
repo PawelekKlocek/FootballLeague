@@ -1,5 +1,6 @@
 package com.footballleague.league_organizer.controllers;
 
+import com.footballleague.league_organizer.entities.Player;
 import com.footballleague.league_organizer.entities.Team;
 import com.footballleague.league_organizer.repositories.TeamRepository;
 import com.footballleague.league_organizer.services.TeamService;
@@ -67,4 +68,9 @@ public class TeamController {
         Team createdTeam = teamService.createTeam(team);
         return ResponseEntity.status(HttpStatus.CREATED).body(createdTeam);
     }
+    @GetMapping("/team-name/{name}")
+    public List<Team> getTeamsByName(@PathVariable String name) {
+        return teamService.getTeamsByName(name);
+    }
+
 }

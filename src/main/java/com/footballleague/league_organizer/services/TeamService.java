@@ -1,5 +1,6 @@
 package com.footballleague.league_organizer.services;
 
+import com.footballleague.league_organizer.entities.Player;
 import com.footballleague.league_organizer.entities.Team;
 import com.footballleague.league_organizer.repositories.TeamRepository;
 import lombok.RequiredArgsConstructor;
@@ -26,5 +27,9 @@ public class TeamService {
 
     public Team createTeam(Team team) {
         return teamRepository.save(team);
+    }
+
+    public List<Team> getTeamsByName(String name) {
+        return teamRepository.findByName(name);
     }
 }

@@ -21,6 +21,9 @@ public class Team {
     @Column(name = "city_name")
     private String cityName;
 
+    @Column(name = "league_id")
+    private Long leagueId;
+
     @Column(name = "emblemPath")
     private String emblemPath;
 }
