@@ -1,17 +1,28 @@
-INSERT INTO teams (id, city_name, name, emblem_path) VALUES
-     (1,'Barcelona', 'FC Barcelona', 'src/main/resources/static/Barcelona.png'),
-     (2, 'Madryt', 'Real Madryt', 'src/main/resources/static/RealMadryt.png'),
-     (3, 'Monachium', 'Bayern Monachium', 'src/main/resources/static/Bayern.png'),
-     (4, 'Dortmund', 'Borussia Dortmund','src/main/resources/static/BorussiaDortmundpng.png'),
-     (5, 'Madryt', 'Atletico Madryt', 'src/main/resources/static/AtleticoMadrid.png');
+INSERT INTO teams (id, city_name, name, emblem_path, league_id) VALUES
+     (1, 'Barcelona', 'FC Barcelona', 'src/main/resources/static/Barcelona.png', 1),
+     (2, 'Madryt', 'Real Madryt', 'src/main/resources/static/RealMadryt.png', 1),
+     (3, 'Madryt', 'Atlético Madryt', 'src/main/resources/static/AtleticoMadrid.png', 1),
+     (4, 'Bilbao', 'Ath. Bilbao', 'src/main/resources/static/Ath_Bilbao.png', 1),
+     (5, 'Villareal', 'Villareal', 'src/main/resources/static/Villareal.png', 1),
+     (6, 'Seville', 'Real Betis', 'src/main/resources/static/RealBetis.png', 1),
+     (7, 'Madrid', 'Rayo', 'src/main/resources/static/Rayo.png', 1),
+     (8, 'Palma de Mallorca', 'Mallorca', 'src/main/resources/static/Mallorca.png', 1),
+     (9, 'San Sebastián', 'Real Sociedad', 'src/main/resources/static/RealSociedad.png', 1),
+     (10, 'Vigo', 'Celta', 'src/main/resources/static/Celta.png', 1),
+     (11, 'Pamplona', 'Osasuna', 'src/main/resources/static/Osasuna.png', 1),
+     (12, 'Seville', 'Sevilla', 'src/main/resources/static/Sevilla.png', 1),
+     (13, 'Girona', 'Girona FC', 'src/main/resources/static/GironaFC.png', 1),
+     (14, 'Getafe', 'Getafe', 'src/main/resources/static/Getafe.png', 1),
+     (15, 'Barcelona', 'Espanyol', 'src/main/resources/static/Espanyol.png', 1);
 
-INSERT INTO league (id, category, end_date, name, season, start_date) VALUES
-      (1, 'prof', '2025-05-01', 'La Liga', '24/25', '2024-08-01'),
-      (2, 'prof', '2025-05-01', 'Premier League', '24/25', '2024-08-01'),
-      (3, 'prof', '2025-05-01', 'Bundesliga', '24/25', '2024-08-01'),
-      (4, 'prof', '2025-05-01', 'Serie A', '24/25', '2024-08-01'),
-      (5, 'prof', '2025-05-01', 'Ekstraklasa', '24/25', '2024-08-01'),
-      (6, 'prof', '2024-01-01', 'Champions League', '24/25', '2025-05-01');
+INSERT INTO league (id, end_date, name, season, start_date) VALUES
+      (1, '2025-05-01', 'La Liga', '24/25', '2024-08-01'),
+      (2, '2025-05-01', 'Premier League', '24/25', '2024-08-01'),
+      (3, '2025-05-01', 'Bundesliga', '24/25', '2024-08-01'),
+      (4, '2025-05-01', 'Serie A', '24/25', '2024-08-01'),
+      (5, '2025-05-01', 'Ligue 1', '24/25', '2024-08-01'),
+      (6, '2025-05-01', 'Ekstraklasa', '24/25', '2024-08-01'),
+      (7, '2024-01-01', 'Champions League', '24/25', '2025-05-01');
 
 INSERT INTO pitch (id, city, is_outdoor, name) VALUES
       (1, 'Barcelona', true, 'Camp Nou'),
@@ -63,3 +74,14 @@ INSERT INTO player (id, name, team_id, position) VALUES
      (48,'Serge Gnabry', 3, 'Forward'),
      (49,'Niklas Süle', 3, 'Defender'),
      (50,'Benjamin Pavard', 3, 'Defender');
+
+DROP table cards;
+DROP table goals;
+DROP table league;
+DROP table matches;
+DROP table pitch;
+DROP table player;
+DROP table referees;
+DROP table standings;
+DROP table teams;
+DROP table users;
