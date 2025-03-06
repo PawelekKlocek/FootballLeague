@@ -22,9 +22,14 @@ public class Player {
     @JoinColumn(name = "team_id", nullable = false)
     private Team team;
 
-
     @Column(name = "position")
     private String position;
+
+    @Column(name = "number")
+    private int number;
+
+    @Column(name = "photo_path")
+    private String photoPath;
 
 }
 

@@ -145,18 +145,17 @@ INSERT INTO matches (id, match_date, team1_score, team2_score, league_id, pitch_
                                                                                                                         (19, '2025-03-14', 1, 4, 1, 5, 20, 25, 26), -- Southampton FC vs Wolverhampton Wanderers (Liga 2)
                                                                                                                         (20, '2025-03-15', 3, 0, 1, 1, 20, 27, 28); -- Leicester City vs Aston Villa (Liga 2)
 
--- Gracze (dla przykładu, 10 z każdej drużyny)
-INSERT INTO player (id, name, team_id, position) VALUES
-                                                     (1, 'Lionel Messi', 1, 'Forward'),
-                                                     (2, 'Karim Benzema', 2, 'Forward'),
-                                                     (3, 'Robert Lewandowski', 3, 'Forward'),
-                                                     (4, 'Erling Haaland', 4, 'Forward'),
-                                                     (5, 'Mohamed Salah', 6, 'Forward'),
-                                                     (6, 'Kevin De Bruyne', 7, 'Midfielder'),
-                                                     (7, 'Harry Kane', 19, 'Forward'),
-                                                     (8, 'Kylian Mbappe', 15, 'Forward'),
-                                                     (9, 'Gianluigi Donnarumma', 15, 'Goalkeeper'),
-                                                     (10, 'Jude Bellingham', 2, 'Midfielder');
+INSERT INTO player (id, name, team_id, position, number, photo_path) VALUES
+                                                                          (1, 'Lionel Messi', 1, 'Forward', 10, 'src/main/resources/static/messi.png'),
+                                                                          (2, 'Karim Benzema', 2, 'Forward', 9, 'src/main/resources/static/benzema.png'),
+                                                                          (3, 'Robert Lewandowski', 3, 'Forward', 9, 'src/main/resources/static/lewandowski.png'),
+                                                                          (4, 'Erling Haaland', 4, 'Forward', 9, 'src/main/resources/static/haaland.png'),
+                                                                          (5, 'Mohamed Salah', 6, 'Forward', 11, 'src/main/resources/static/salah.png'),
+                                                                          (6, 'Kevin De Bruyne', 7, 'Midfielder', 17, 'src/main/resources/static/debruyne.png'),
+                                                                          (7, 'Harry Kane', 19, 'Forward', 10, 'src/main/resources/static/kane.png'),
+                                                                          (8, 'Kylian Mbappe', 15, 'Forward', 7, 'src/main/resources/static/mbappe.png'),
+                                                                          (9, 'Gianluigi Donnarumma', 15, 'Goalkeeper', 99, 'src/main/resources/static/donnarumma.png'),
+                                                                          (10, 'Jude Bellingham', 2, 'Midfielder', 22, 'src/main/resources/static/bellingham.png');
 
 INSERT INTO standings (league_id, team_id, matches_played, wins, draws, losses, points, goals_scored, goals_conceded) VALUES
                                                                                                                           (1, 1, 10, 7, 2, 1, 23, 22, 10),

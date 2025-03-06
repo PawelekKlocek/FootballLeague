@@ -25,6 +25,10 @@ public class PlayerService {
     public Player addPlayer(Player player) {
         return playerRepository.save(player);
     }
+    public List<Player> getPlayersByTeamId(long teamId) {
+        return playerRepository.findByTeamId(teamId);
+    }
+
 
 
 
