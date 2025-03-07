@@ -31,5 +31,8 @@ public class Player {
     @Column(name = "photo_path")
     private String photoPath;
 
+    @Column(name = "nationality")
+    private String nationality;
+
 }
 

@@ -1,3 +1,4 @@
+
 INSERT INTO teams (id, city_name, name, league_id, emblem_path) VALUES
                                                                     (1, 'Barcelona', 'FC Barcelona', 1, 'src/main/resources/static/Barcelona.png'),
                                                                     (2, 'Madryt', 'Real Madryt', 1, 'src/main/resources/static/RealMadryt.png'),
@@ -15,69 +16,70 @@ INSERT INTO teams (id, city_name, name, league_id, emblem_path) VALUES
                                                                     (14, 'Granada', 'Granada CF', 1, 'src/main/resources/static/Granada.png'),
                                                                     (15, 'Levante', 'Levante UD', 1, 'src/main/resources/static/Levante.png');
 INSERT INTO teams (id, city_name, name, league_id, emblem_path) VALUES
-                                                                    (16, 'Leicester', 'Leicester City', 2, 'src/main/resources/static/Leicester.png'),
-                                                                    (17, 'Nottingham', 'Nottingham Forest', 2, 'src/main/resources/static/Nottingham.png'),
-                                                                    (18, 'Everton', 'Everton FC', 2, 'src/main/resources/static/Everton.png'),
-                                                                    (19, 'Fulham', 'Fulham FC', 2, 'src/main/resources/static/Fulham.png'),
-                                                                    (20, 'Aston Villa', 'Aston Villa', 2, 'src/main/resources/static/AstonVilla.png'),
-                                                                    (21, 'West Ham', 'West Ham United', 2, 'src/main/resources/static/WestHam.png'),
+                                                                    (16, 'Manchester', 'Manchester City', 2, 'src/main/resources/static/ManchesterCity.png'),
+                                                                    (17, 'Liverpool', 'Liverpool FC', 2, 'src/main/resources/static/Liverpool.png'),
+                                                                    (18, 'Manchester', 'Manchester United', 2, 'src/main/resources/static/ManchesterUnited.png'),
+                                                                    (19, 'Londyn', 'Chelsea FC', 2, 'src/main/resources/static/Chelsea.png'),
+                                                                    (20, 'Londyn', 'Arsenal FC', 2, 'src/main/resources/static/Arsenal.png'),
+                                                                    (21, 'Londyn', 'Tottenham Hotspur', 2, 'src/main/resources/static/Tottenham.png'),
                                                                     (22, 'Newcastle', 'Newcastle United', 2, 'src/main/resources/static/Newcastle.png'),
-                                                                    (23, 'Brentford', 'Brentford FC', 2, 'src/main/resources/static/Brentford.png'),
-                                                                    (24, 'Brighton', 'Brighton & Hove Albion', 2, 'src/main/resources/static/Brighton.png'),
-                                                                    (25, 'Bournemouth', 'AFC Bournemouth', 2, 'src/main/resources/static/Bournemouth.png'),
-                                                                    (26, 'Wolverhampton', 'Wolverhampton Wanderers', 2, 'src/main/resources/static/Wolves.png'),
-                                                                    (27, 'Southampton', 'Southampton FC', 2, 'src/main/resources/static/Southampton.png'),
-                                                                    (28, 'Crystal Palace', 'Crystal Palace', 2, 'src/main/resources/static/Palace.png'),
-                                                                    (29, 'Leeds', 'Leeds United', 2, 'src/main/resources/static/Leeds.png'),
-                                                                    (30, 'Norwich', 'Norwich City', 2, 'src/main/resources/static/Norwich.png');
+                                                                    (23, 'Birmingham', 'Aston Villa', 2, 'src/main/resources/static/AstonVilla.png'),
+                                                                    (24, 'Londyn', 'West Ham United', 2, 'src/main/resources/static/WestHam.png'),
+                                                                    (25, 'Brighton', 'Brighton & Hove Albion', 2, 'src/main/resources/static/Brighton.png'),
+                                                                    (26, 'Londyn', 'Fulham FC', 2, 'src/main/resources/static/Fulham.png'),
+                                                                    (27, 'Londyn', 'Crystal Palace', 2, 'src/main/resources/static/CrystalPalace.png'),
+                                                                    (28, 'Nottingham', 'Nottingham Forest', 2, 'src/main/resources/static/NottinghamForest.png'),
+                                                                    (29, 'Liverpool', 'Everton FC', 2, 'src/main/resources/static/Everton.png'),
+                                                                    (30, 'Wolverhampton', 'Wolverhampton Wanderers', 2, 'src/main/resources/static/Wolves.png');
+
 INSERT INTO teams (id, city_name, name, league_id, emblem_path) VALUES
-                                                                    (31, 'Stuttgart', 'VfB Stuttgart', 3, 'src/main/resources/static/Stuttgart.png'),
-                                                                    (32, 'Hannover', 'Hannover 96', 3, 'src/main/resources/static/Hannover.png'),
-                                                                    (33, 'Bayer Leverkusen', 'Bayer 04 Leverkusen', 3, 'src/main/resources/static/Leverkusen.png'),
-                                                                    (34, 'Werder Bremen', 'SV Werder Bremen', 3, 'src/main/resources/static/WerderBremen.png'),
-                                                                    (35, 'Augusta', 'FC Augsburg', 3, 'src/main/resources/static/Augsburg.png'),
-                                                                    (36, 'Wolfsburg', 'VfL Wolfsburg', 3, 'src/main/resources/static/Wolfsburg.png'),
-                                                                    (37, 'Frankfurt', 'Eintracht Frankfurt', 3, 'src/main/resources/static/Frankfurt.png'),
-                                                                    (38, 'Mainz', 'FSV Mainz 05', 3, 'src/main/resources/static/Mainz.png'),
-                                                                    (39, 'Köln', '1. FC Köln', 3, 'src/main/resources/static/Cologne.png'),
-                                                                    (40, 'Freiburg', 'SC Freiburg', 3, 'src/main/resources/static/Freiburg.png'),
-                                                                    (41, 'Union Berlin', '1. FC Union Berlin', 3, 'src/main/resources/static/UnionBerlin.png'),
-                                                                    (42, 'Bielefeld', 'Arminia Bielefeld', 3, 'src/main/resources/static/Bielefeld.png'),
-                                                                    (43, 'Paderborn', 'SC Paderborn 07', 3, 'src/main/resources/static/Paderborn.png'),
-                                                                    (44, 'Heidenheim', '1. FC Heidenheim', 3, 'src/main/resources/static/Heidenheim.png'),
-                                                                    (45, 'Düsseldorf', 'Fortuna Düsseldorf', 3, 'src/main/resources/static/Dusseldorf.png');
+                                                                    (31, 'Monachium', 'Bayern Monachium', 3, 'src/main/resources/static/Bayern.png'),
+                                                                    (32, 'Dortmund', 'Borussia Dortmund', 3, 'src/main/resources/static/Dortmund.png'),
+                                                                    (33, 'Lipsk', 'RB Lipsk', 3, 'src/main/resources/static/RBLipsk.png'),
+                                                                    (34, 'Leverkusen', 'Bayer Leverkusen', 3, 'src/main/resources/static/Leverkusen.png'),
+                                                                    (35, 'Mönchengladbach', 'Borussia Mönchengladbach', 3, 'src/main/resources/static/Monchengladbach.png'),
+                                                                    (36, 'Frankfurt', 'Eintracht Frankfurt', 3, 'src/main/resources/static/Frankfurt.png'),
+                                                                    (37, 'Stuttgart', 'VfB Stuttgart', 3, 'src/main/resources/static/Stuttgart.png'),
+                                                                    (38, 'Berlin', 'Hertha BSC', 3, 'src/main/resources/static/Hertha.png'),
+                                                                    (39, 'Berlin', 'Union Berlin', 3, 'src/main/resources/static/UnionBerlin.png'),
+                                                                    (40, 'Bremen', 'Werder Brema', 3, 'src/main/resources/static/Werder.png'),
+                                                                    (41, 'Wolfsburg', 'VfL Wolfsburg', 3, 'src/main/resources/static/Wolfsburg.png'),
+                                                                    (42, 'Freiburg', 'SC Freiburg', 3, 'src/main/resources/static/Freiburg.png'),
+                                                                    (43, 'Bochum', 'VfL Bochum', 3, 'src/main/resources/static/Bochum.png'),
+                                                                    (44, 'Mainz', '1. FSV Mainz 05', 3, 'src/main/resources/static/Mainz.png'),
+                                                                    (45, 'Augsburg', 'FC Augsburg', 3, 'src/main/resources/static/Augsburg.png');
 INSERT INTO teams (id, city_name, name, league_id, emblem_path) VALUES
-                                                                    (46, 'Cagliari', 'Cagliari Calcio', 4, 'src/main/resources/static/Cagliari.png'),
-                                                                    (47, 'Sassuolo', 'US Sassuolo Calcio', 4, 'src/main/resources/static/Sassuolo.png'),
-                                                                    (48, 'Lazio', 'SS Lazio', 4, 'src/main/resources/static/Lazio.png'),
-                                                                    (49, 'Brescia', 'Brescia Calcio', 4, 'src/main/resources/static/Brescia.png'),
-                                                                    (50, 'Empoli', 'Empoli FC', 4, 'src/main/resources/static/Empoli.png'),
-                                                                    (51, 'Lecce', 'US Lecce', 4, 'src/main/resources/static/Lecce.png'),
-                                                                    (52, 'Monza', 'AC Monza', 4, 'src/main/resources/static/Monza.png'),
-                                                                    (53, 'Verona', 'Hellas Verona', 4, 'src/main/resources/static/Verona.png'),
-                                                                    (54, 'Parma', 'Parma Calcio', 4, 'src/main/resources/static/Parma.png'),
-                                                                    (55, 'Crotone', 'FC Crotone', 4, 'src/main/resources/static/Crotone.png'),
-                                                                    (56, 'Fiorentina', 'ACF Fiorentina', 4, 'src/main/resources/static/Fiorentina.png'),
-                                                                    (57, 'Napoli', 'Napoli', 4, 'src/main/resources/static/Napoli.png'),
-                                                                    (58, 'Roma', 'AS Roma', 4, 'src/main/resources/static/Roma.png'),
-                                                                    (59, 'Milan', 'AC Milan', 4, 'src/main/resources/static/ACMilan.png'),
-                                                                    (60, 'Juventus', 'Juventus', 4, 'src/main/resources/static/Juventus.png');
+                                                                    (46, 'Mediolan', 'AC Milan', 4, 'src/main/resources/static/ACMilan.png'),
+                                                                    (47, 'Mediolan', 'Inter Mediolan', 4, 'src/main/resources/static/Inter.png'),
+                                                                    (48, 'Turyn', 'Juventus FC', 4, 'src/main/resources/static/Juventus.png'),
+                                                                    (49, 'Rzym', 'AS Roma', 4, 'src/main/resources/static/Roma.png'),
+                                                                    (50, 'Rzym', 'SS Lazio', 4, 'src/main/resources/static/Lazio.png'),
+                                                                    (51, 'Neapol', 'SSC Napoli', 4, 'src/main/resources/static/Napoli.png'),
+                                                                    (52, 'Florencja', 'ACF Fiorentina', 4, 'src/main/resources/static/Fiorentina.png'),
+                                                                    (53, 'Bergamo', 'Atalanta BC', 4, 'src/main/resources/static/Atalanta.png'),
+                                                                    (54, 'Genua', 'Genoa CFC', 4, 'src/main/resources/static/Genoa.png'),
+                                                                    (55, 'Genua', 'UC Sampdoria', 4, 'src/main/resources/static/Sampdoria.png'),
+                                                                    (56, 'Turyn', 'Torino FC', 4, 'src/main/resources/static/Torino.png'),
+                                                                    (57, 'Bolonia', 'Bologna FC', 4, 'src/main/resources/static/Bologna.png'),
+                                                                    (58, 'Werona', 'Hellas Verona', 4, 'src/main/resources/static/HellasVerona.png'),
+                                                                    (59, 'Udine', 'Udinese Calcio', 4, 'src/main/resources/static/Udinese.png'),
+                                                                    (60, 'Sassuolo', 'US Sassuolo', 4, 'src/main/resources/static/Sassuolo.png');
 INSERT INTO teams (id, city_name, name, league_id, emblem_path) VALUES
-                                                                    (61, 'Strasbourg', 'RC Strasbourg Alsace', 5, 'src/main/resources/static/Strasbourg.png'),
-                                                                    (62, 'Toulouse', 'Toulouse FC', 5, 'src/main/resources/static/Toulouse.png'),
-                                                                    (63, 'Lille', 'Lille OSC', 5, 'src/main/resources/static/Lille.png'),
-                                                                    (64, 'Rennes', 'Stade Rennais FC', 5, 'src/main/resources/static/Rennes.png'),
-                                                                    (65, 'Montpellier', 'Montpellier HSC', 5, 'src/main/resources/static/Montpellier.png'),
-                                                                    (66, 'Nantes', 'FC Nantes', 5, 'src/main/resources/static/Nantes.png'),
-                                                                    (67, 'Lorient', 'FC Lorient', 5, 'src/main/resources/static/Lorient.png'),
-                                                                    (68, 'Brest', 'Stade Brestois 29', 5, 'src/main/resources/static/Brest.png'),
-                                                                    (69, 'Angers', 'Angers SCO', 5, 'src/main/resources/static/Angers.png'),
-                                                                    (70, 'Ajaccio', 'AC Ajaccio', 5, 'src/main/resources/static/Ajaccio.png'),
-                                                                    (71, 'Paris', 'Paris Saint-Germain', 5, 'src/main/resources/static/PSG.png'),
-                                                                    (72, 'Monaco', 'AS Monaco', 5, 'src/main/resources/static/Monaco.png'),
-                                                                    (73, 'Marseille', 'Olympique Marseille', 5, 'src/main/resources/static/Marseille.png'),
-                                                                    (74, 'Lyon', 'Olympique Lyonnais', 5, 'src/main/resources/static/Lyon.png'),
-                                                                    (75, 'Nice', 'OGC Nice', 5, 'src/main/resources/static/Nice.png');
+                                                                    (61, 'Paryż', 'Paris Saint-Germain', 5, 'src/main/resources/static/PSG.png'),
+                                                                    (62, 'Marsylia', 'Olympique Marsylia', 5, 'src/main/resources/static/Marsylia.png'),
+                                                                    (63, 'Lyon', 'Olympique Lyon', 5, 'src/main/resources/static/Lyon.png'),
+                                                                    (64, 'Monako', 'AS Monaco', 5, 'src/main/resources/static/Monaco.png'),
+                                                                    (65, 'Lille', 'Lille OSC', 5, 'src/main/resources/static/Lille.png'),
+                                                                    (66, 'Rennes', 'Stade Rennais', 5, 'src/main/resources/static/Rennes.png'),
+                                                                    (67, 'Nicea', 'OGC Nice', 5, 'src/main/resources/static/Nice.png'),
+                                                                    (68, 'Lens', 'RC Lens', 5, 'src/main/resources/static/Lens.png'),
+                                                                    (69, 'Nantes', 'FC Nantes', 5, 'src/main/resources/static/Nantes.png'),
+                                                                    (70, 'Strasburg', 'RC Strasbourg', 5, 'src/main/resources/static/Strasbourg.png'),
+                                                                    (71, 'Montpellier', 'Montpellier HSC', 5, 'src/main/resources/static/Montpellier.png'),
+                                                                    (72, 'Tuluza', 'Toulouse FC', 5, 'src/main/resources/static/Toulouse.png'),
+                                                                    (73, 'Reims', 'Stade de Reims', 5, 'src/main/resources/static/Reims.png'),
+                                                                    (74, 'Brest', 'Stade Brestois', 5, 'src/main/resources/static/Brest.png'),
+                                                                    (75, 'Metz', 'FC Metz', 5, 'src/main/resources/static/Metz.png');
 
 INSERT INTO referees (id, first_name, last_name) VALUES
                                                      (1, 'Szymon', 'Marciniak'),
@@ -129,33 +131,79 @@ INSERT INTO matches (id, match_date, team1_score, team2_score, league_id, pitch_
                                                                                                                         (3, '2025-01-21', 1, 1, 2, 4, 3, 6, 7),
                                                                                                                         (4, '2025-02-28', 2, 2, 4, 5, 4, 9, 10),
                                                                                                                         (5, '2025-02-15', 1, 0, 5, 9, 5, 15, 16),
-                                                                                                                        (6, '2025-03-01', 3, 1, 1, 2, 6, 1, 2),  -- FC Barcelona vs Real Madryt (Liga 1)
-                                                                                                                        (7, '2025-03-02', 2, 2, 1, 3, 7, 3, 4),  -- Sevilla FC vs Valencia CF (Liga 1)
-                                                                                                                        (8, '2025-03-03', 4, 0, 1, 4, 8, 5, 6),  -- Athletic Bilbao vs Atlético Madrid (Liga 1)
-                                                                                                                        (9, '2025-03-04', 1, 3, 1, 5, 9, 7, 8),  -- Villarreal CF vs Real Sociedad (Liga 1)
-                                                                                                                        (10, '2025-03-05', 2, 1, 1, 1, 10, 9, 10), -- Real Betis vs Getafe CF (Liga 1)
-                                                                                                                        (11, '2025-03-06', 0, 0, 1, 2, 11, 11, 12), -- RC Celta de Vigo vs Deportivo Alavés (Liga 1)
-                                                                                                                        (12, '2025-03-07', 3, 2, 1, 3, 12, 13, 14), -- RCD Espanyol vs Granada CF (Liga 1)
-                                                                                                                        (13, '2025-03-08', 5, 1, 1, 3, 13, 14, 15), -- Levante UD vs FC Barcelona (Liga 1)
-                                                                                                                        (14, '2025-03-09', 2, 3, 1, 4, 14, 15, 16), -- Real Betis vs Leicester City (Liga 1 vs Liga 2) - niepoprawne, zmieńmy
-                                                                                                                        (15, '2025-03-10', 1, 1, 1, 5, 16, 17, 18), -- Wolverhampton Wanderers vs Nottingham Forest (Liga 2)
-                                                                                                                        (16, '2025-03-11', 4, 4, 1, 1, 17, 19, 20), -- West Ham United vs Brentford FC (Liga 2)
-                                                                                                                        (17, '2025-03-12', 3, 2, 1, 3, 18, 21, 22), -- Brighton & Hove Albion vs Newcastle United (Liga 2)
-                                                                                                                        (18, '2025-03-13', 2, 1, 1, 4, 19, 23, 24), -- Bournemouth vs Crystal Palace (Liga 2)
-                                                                                                                        (19, '2025-03-14', 1, 4, 1, 5, 20, 25, 26), -- Southampton FC vs Wolverhampton Wanderers (Liga 2)
-                                                                                                                        (20, '2025-03-15', 3, 0, 1, 1, 20, 27, 28); -- Leicester City vs Aston Villa (Liga 2)
+                                                                                                                        (6, '2025-03-01', 3, 1, 1, 2, 6, 1, 2),
+                                                                                                                        (7, '2025-03-02', 2, 2, 1, 3, 7, 3, 4),
+                                                                                                                        (8, '2025-03-03', 4, 0, 1, 4, 8, 5, 6),
+                                                                                                                        (9, '2025-03-04', 1, 3, 1, 5, 9, 7, 8),
+                                                                                                                        (10, '2025-03-05', 2, 1, 1, 1, 10, 9, 10),
+                                                                                                                        (11, '2025-03-06', 0, 0, 1, 2, 11, 11, 12),
+                                                                                                                        (12, '2025-03-07', 3, 2, 1, 3, 12, 13, 14),
+                                                                                                                        (13, '2025-03-08', 5, 1, 1, 3, 13, 14, 15),
+                                                                                                                        (14, '2025-03-09', 2, 3, 1, 4, 14, 15, 16),
+                                                                                                                        (15, '2025-03-10', 1, 1, 1, 5, 16, 17, 18),
+                                                                                                                        (16, '2025-03-11', 4, 4, 1, 1, 17, 19, 20),
+                                                                                                                        (17, '2025-03-12', 3, 2, 1, 3, 18, 21, 22),
+                                                                                                                        (18, '2025-03-13', 2, 1, 1, 4, 19, 23, 24),
+                                                                                                                        (19, '2025-03-14', 1, 4, 1, 5, 20, 25, 26),
+                                                                                                                        (20, '2025-03-15', 3, 0, 1, 1, 20, 27, 28);
 
-INSERT INTO player (id, name, team_id, position, number, photo_path) VALUES
-                                                                          (1, 'Lionel Messi', 1, 'Forward', 10, 'src/main/resources/static/messi.png'),
-                                                                          (2, 'Karim Benzema', 2, 'Forward', 9, 'src/main/resources/static/benzema.png'),
-                                                                          (3, 'Robert Lewandowski', 3, 'Forward', 9, 'src/main/resources/static/lewandowski.png'),
-                                                                          (4, 'Erling Haaland', 4, 'Forward', 9, 'src/main/resources/static/haaland.png'),
-                                                                          (5, 'Mohamed Salah', 6, 'Forward', 11, 'src/main/resources/static/salah.png'),
-                                                                          (6, 'Kevin De Bruyne', 7, 'Midfielder', 17, 'src/main/resources/static/debruyne.png'),
-                                                                          (7, 'Harry Kane', 19, 'Forward', 10, 'src/main/resources/static/kane.png'),
-                                                                          (8, 'Kylian Mbappe', 15, 'Forward', 7, 'src/main/resources/static/mbappe.png'),
-                                                                          (9, 'Gianluigi Donnarumma', 15, 'Goalkeeper', 99, 'src/main/resources/static/donnarumma.png'),
-                                                                          (10, 'Jude Bellingham', 2, 'Midfielder', 22, 'src/main/resources/static/bellingham.png');
+INSERT INTO player (id, name, team_id, position, number, photo_path, nationality) VALUES
+                                                                                      (1, 'Marc-André ter Stegen', 1, 'Goalkeeper', 1, 'src/main/resources/static/terstegen.png', 'Germany'),
+                                                                                      (2, 'Jules Koundé', 1, 'Defender', 23, 'src/main/resources/static/kounde.png', 'France'),
+                                                                                      (3, 'Ronald Araújo', 1, 'Defender', 4, 'src/main/resources/static/araujo.png', 'Uruguay'),
+                                                                                      (4, 'Andreas Christensen', 1, 'Defender', 15, 'src/main/resources/static/christensen.png', 'Denmark'),
+                                                                                      (5, 'Alejandro Balde', 1, 'Defender', 3, 'src/main/resources/static/balde.png', 'Spain'),
+                                                                                      (6, 'Sergi Roberto', 1, 'Midfielder', 20, 'src/main/resources/static/roberto.png', 'Spain'),
+                                                                                      (7, 'Frenkie de Jong', 1, 'Midfielder', 21, 'src/main/resources/static/dejong.png', 'Netherlands'),
+                                                                                      (8, 'Pedri', 1, 'Midfielder', 8, 'src/main/resources/static/pedri.png', 'Spain'),
+                                                                                      (9, 'Gavi', 1, 'Midfielder', 6, 'src/main/resources/static/gavi.png', 'Spain'),
+                                                                                      (10, 'İlkay Gündoğan', 1, 'Midfielder', 22, 'src/main/resources/static/gundogan.png', 'Germany'),
+                                                                                      (11, 'Robert Lewandowski', 1, 'Forward', 9, 'src/main/resources/static/lewandowski.png', 'Poland'),
+                                                                                      (12, 'Raphinha', 1, 'Forward', 11, 'src/main/resources/static/raphinha.png', 'Brazil'),
+                                                                                      (13, 'João Félix', 1, 'Forward', 14, 'src/main/resources/static/joaofelix.png', 'Portugal'),
+                                                                                      (14, 'Lamine Yamal', 1, 'Forward', 27, 'src/main/resources/static/yamal.png', 'Spain'),
+                                                                                      (15, 'Ferran Torres', 1, 'Forward', 7, 'src/main/resources/static/torres.png', 'Spain'),
+                                                                                      (16, 'Vitor Roque', 1, 'Forward', 19, 'src/main/resources/static/roque.png', 'Brazil'),
+                                                                                      (17, 'Iñigo Martínez', 1, 'Defender', 5, 'src/main/resources/static/martinez.png', 'Spain'),
+                                                                                      (18, 'Marcos Alonso', 1, 'Defender', 17, 'src/main/resources/static/alonso.png', 'Spain'),
+                                                                                      (19, 'Oriol Romeu', 1, 'Midfielder', 18, 'src/main/resources/static/romeu.png', 'Spain'),
+                                                                                      (20, 'Íñaki Peña', 1, 'Goalkeeper', 13, 'src/main/resources/static/pena.png', 'Spain');
+INSERT INTO player (id, name, team_id, position, number, photo_path, nationality) VALUES
+                                                                                      (21, 'Thibaut Courtois', 2, 'Goalkeeper', 1, 'src/main/resources/static/courtois.png', 'Belgium'),
+                                                                                      (22, 'Andriy Lunin', 2, 'Goalkeeper', 13, 'src/main/resources/static/lunin.png', 'Ukraine'),
+                                                                                      (23, 'Dani Carvajal', 2, 'Defender', 2, 'src/main/resources/static/carvajal.png', 'Spain'),
+                                                                                      (24, 'Éder Militão', 2, 'Defender', 3, 'src/main/resources/static/militao.png', 'Brazil'),
+                                                                                      (25, 'David Alaba', 2, 'Defender', 4, 'src/main/resources/static/alaba.png', 'Austria'),
+                                                                                      (26, 'Nacho Fernández', 2, 'Defender', 6, 'src/main/resources/static/nacho.png', 'Spain'),
+                                                                                      (27, 'Antonio Rüdiger', 2, 'Defender', 22, 'src/main/resources/static/rudiger.png', 'Germany'),
+                                                                                      (28, 'Ferland Mendy', 2, 'Defender', 23, 'src/main/resources/static/mendy.png', 'France'),
+                                                                                      (29, 'Eduardo Camavinga', 2, 'Midfielder', 12, 'src/main/resources/static/camavinga.png', 'France'),
+                                                                                      (30, 'Aurélien Tchouaméni', 2, 'Midfielder', 18, 'src/main/resources/static/tchouameni.png', 'France'),
+                                                                                      (31, 'Toni Kroos', 2, 'Midfielder', 8, 'src/main/resources/static/kroos.png', 'Germany'),
+                                                                                      (32, 'Luka Modrić', 2, 'Midfielder', 10, 'src/main/resources/static/modric.png', 'Croatia'),
+                                                                                      (33, 'Federico Valverde', 2, 'Midfielder', 15, 'src/main/resources/static/valverde.png', 'Uruguay'),
+                                                                                      (34, 'Jude Bellingham', 2, 'Midfielder', 5, 'src/main/resources/static/bellingham.png', 'England'),
+                                                                                      (35, 'Vinícius Júnior', 2, 'Forward', 7, 'src/main/resources/static/vinicius.png', 'Brazil'),
+                                                                                      (36, 'Rodrygo Goes', 2, 'Forward', 11, 'src/main/resources/static/rodrygo.png', 'Brazil'),
+                                                                                      (37, 'Brahim Díaz', 2, 'Forward', 21, 'src/main/resources/static/brahim.png', 'Spain'),
+                                                                                      (38, 'Joselu', 2, 'Forward', 14, 'src/main/resources/static/joselu.png', 'Spain'),
+                                                                                      (39, 'Fran García', 2, 'Defender', 20, 'src/main/resources/static/garcia.png', 'Spain'),
+                                                                                      (40, 'Kepa Arrizabalaga', 2, 'Goalkeeper', 25, 'src/main/resources/static/kepa.png', 'Spain');
+
+INSERT INTO player (id, name, team_id, position, number, photo_path, nationality) VALUES
+                                                                                      (41, 'Jesús Navas', 3, 'Defender', 16, 'src/main/resources/static/navas.png', 'Spain'), -- Sevilla FC
+                                                                                      (42, 'José Gayà', 4, 'Defender', 14, 'src/main/resources/static/gaya.png', 'Spain'), -- Valencia CF
+                                                                                      (43, 'Iker Muniain', 5, 'Midfielder', 10, 'src/main/resources/static/muniain.png', 'Spain'), -- Athletic Bilbao
+                                                                                      (44, 'Antoine Griezmann', 6, 'Forward', 7, 'src/main/resources/static/griezmann.png', 'France'), -- Atlético Madrid
+                                                                                      (45, 'Gerard Moreno', 7, 'Forward', 9, 'src/main/resources/static/moreno.png', 'Spain'), -- Villarreal CF
+                                                                                      (46, 'Mikel Oyarzabal', 8, 'Forward', 10, 'src/main/resources/static/oyarzabal.png', 'Spain'), -- Real Sociedad
+                                                                                      (47, 'Nabil Fekir', 9, 'Midfielder', 8, 'src/main/resources/static/fekir.png', 'France'), -- Real Betis
+                                                                                      (48, 'Mason Greenwood', 10, 'Forward', 12, 'src/main/resources/static/greenwood.png', 'England'), -- Getafe CF
+                                                                                      (49, 'Iago Aspas', 11, 'Forward', 10, 'src/main/resources/static/aspas.png', 'Spain'), -- Celta Vigo
+                                                                                      (50, 'Luis Rioja', 12, 'Midfielder', 11, 'src/main/resources/static/rioja.png', 'Spain'), -- Deportivo Alavés
+                                                                                      (51, 'Joselu', 13, 'Forward', 9, 'src/main/resources/static/joselu.png', 'Spain'), -- RCD Espanyol
+                                                                                      (52, 'Bryan Zaragoza', 14, 'Forward', 26, 'src/main/resources/static/zaragoza.png', 'Spain'), -- Granada CF
+                                                                                      (53, 'José Campaña', 15, 'Midfielder', 24, 'src/main/resources/static/campana.png', 'Spain'); -- Levante UD
 
 INSERT INTO standings (league_id, team_id, matches_played, wins, draws, losses, points, goals_scored, goals_conceded) VALUES
                                                                                                                           (1, 1, 10, 7, 2, 1, 23, 22, 10),
