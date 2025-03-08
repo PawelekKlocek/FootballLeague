@@ -22,6 +22,9 @@ public class Referee {
     @Column(name = "last_name", nullable = false)
     private String lastName;
 
-    @Column(name = "emblem_path")
-    private String emblemPath;
+    @Column(name = "photo_path")
+    private String photoPath;
+
+    @Column(name = "nationality")
+    private String nationality;
 }

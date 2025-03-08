@@ -91,27 +91,27 @@ INSERT INTO teams (id, city_name, name, league_id, emblem_path) VALUES
                                                                     (74, 'Brest', 'Stade Brestois', 5, 'src/main/resources/static/Brest.png'),
                                                                     (75, 'Metz', 'FC Metz', 5, 'src/main/resources/static/Metz.png');
 
-INSERT INTO referees (id, first_name, last_name, emblem_path) VALUES
-                                                                  (1, 'Szymon', 'Marciniak', 'src/main/resources/static/referees/SzymonMarciniak.jpg'),
-                                                                  (2, 'Pierluigi', 'Collina', 'src/main/resources/static/referees/PierluigiCollina.jpg'),
-                                                                  (3, 'Daniele', 'Orsato', 'src/main/resources/static/referees/DanieleOrsato.jpg'),
-                                                                  (4, 'Anthony', 'Taylor', 'src/main/resources/static/referees/AnthonyTaylor.jpg'),
-                                                                  (5, 'Björn', 'Kuipers', 'src/main/resources/static/referees/BjornKuipers.jpg'),
-                                                                  (6, 'Felix', 'Brych', 'src/main/resources/static/referees/FelixBrych.jpg'),
-                                                                  (7, 'Cüneyt', 'Çakır', 'src/main/resources/static/referees/CüneytÇakır.jpg'),
-                                                                  (8, 'Danny', 'Makkelie', 'src/main/resources/static/referees/DannyMakkelie.jpg'),
-                                                                  (9, 'Michael', 'Oliver', 'src/main/resources/static/referees/MichaelOliver.jpg'),
-                                                                  (10, 'Carlos', 'Del Cerro Grande', 'src/main/resources/static/referees/CarlosDelCerroGrande.jpg'),
-                                                                  (11, 'Mateu', 'Lahoz', 'src/main/resources/static/referees/MateuLahoz.jpg'),
-                                                                  (12, 'Gianluca', 'Rocchi', 'src/main/resources/static/referees/GianlucaRocchi.jpg'),
-                                                                  (13, 'Nicola', 'Rizzoli', 'src/main/resources/static/referees/NicolaRizzoli.jpg'),
-                                                                  (14, 'Sergei', 'Karasev', 'src/main/resources/static/referees/SergeiKarasev.jpg'),
-                                                                  (15, 'Clément', 'Turpin', 'src/main/resources/static/referees/ClementTurpin.jpg'),
-                                                                  (16, 'William', 'Collum', 'src/main/resources/static/referees/WilliamCollum.jpg'),
-                                                                  (17, 'Mark', 'Clattenburg', 'src/main/resources/static/referees/MarkClattenburg.jpg'),
-                                                                  (18, 'Damir', 'Skomina', 'src/main/resources/static/referees/DamirSkomina.jpg'),
-                                                                  (19, 'Pavel', 'Kralovec', 'src/main/resources/static/referees/PavelKralovec.jpg'),
-                                                                  (20, 'Andreas', 'Ekberg', 'src/main/resources/static/referees/AndreasEkberg.jpg');
+INSERT INTO referees (id, first_name, last_name, photo_path, nationality) VALUES
+                                                                               (1, 'Szymon', 'Marciniak', 'src/main/resources/static/referees/SzymonMarciniak.jpg', 'Poland'),
+                                                                               (2, 'Pierluigi', 'Collina', 'src/main/resources/static/referees/PierluigiCollina.jpg', 'Italy'),
+                                                                               (3, 'Daniele', 'Orsato', 'src/main/resources/static/referees/DanieleOrsato.jpg', 'Italy'),
+                                                                               (4, 'Anthony', 'Taylor', 'src/main/resources/static/referees/AnthonyTaylor.jpg', 'England'),
+                                                                               (5, 'Björn', 'Kuipers', 'src/main/resources/static/referees/BjornKuipers.jpg', 'Netherlands'),
+                                                                               (6, 'Felix', 'Brych', 'src/main/resources/static/referees/FelixBrych.jpg', 'Germany'),
+                                                                               (7, 'Cüneyt', 'Çakır', 'src/main/resources/static/referees/CüneytÇakır.jpg', 'Turkey'),
+                                                                               (8, 'Danny', 'Makkelie', 'src/main/resources/static/referees/DannyMakkelie.jpg', 'Netherlands'),
+                                                                               (9, 'Michael', 'Oliver', 'src/main/resources/static/referees/MichaelOliver.jpg', 'England'),
+                                                                               (10, 'Carlos', 'Del Cerro Grande', 'src/main/resources/static/referees/CarlosDelCerroGrande.jpg', 'Spain'),
+                                                                               (11, 'Mateu', 'Lahoz', 'src/main/resources/static/referees/MateuLahoz.jpg', 'Spain'),
+                                                                               (12, 'Gianluca', 'Rocchi', 'src/main/resources/static/referees/GianlucaRocchi.jpg', 'Italy'),
+                                                                               (13, 'Nicola', 'Rizzoli', 'src/main/resources/static/referees/NicolaRizzoli.jpg', 'Italy'),
+                                                                               (14, 'Sergei', 'Karasev', 'src/main/resources/static/referees/SergeiKarasev.jpg', 'Russia'),
+                                                                               (15, 'Clément', 'Turpin', 'src/main/resources/static/referees/ClementTurpin.jpg', 'France'),
+                                                                               (16, 'William', 'Collum', 'src/main/resources/static/referees/WilliamCollum.jpg', 'Scotland'),
+                                                                               (17, 'Mark', 'Clattenburg', 'src/main/resources/static/referees/MarkClattenburg.jpg', 'England'),
+                                                                               (18, 'Damir', 'Skomina', 'src/main/resources/static/referees/DamirSkomina.jpg', 'Slovenia'),
+                                                                               (19, 'Pavel', 'Kralovec', 'src/main/resources/static/referees/PavelKralovec.jpg', 'Czech Republic'),
+                                                                               (20, 'Andreas', 'Ekberg', 'src/main/resources/static/referees/AndreasEkberg.jpg', 'Sweden');
 
 -- Ligi
 INSERT INTO league (id, category, end_date, name, season, start_date) VALUES

@@ -56,7 +56,7 @@ public class RefereeController {
             return ResponseEntity.notFound().build();
         }
 
-        String emblemPath = referee.get().getEmblemPath();
+        String emblemPath = referee.get().getPhotoPath();
 
         try {
             Path imagePath = Paths.get(emblemPath);
@@ -65,7 +65,7 @@ public class RefereeController {
 
             return ResponseEntity.ok()
                     .contentType(MediaType.IMAGE_JPEG)
-                    .header(HttpHeaders.CONTENT_DISPOSITION, "inline; filename=\"referee_emblem.png\"")
+                    .header(HttpHeaders.CONTENT_DISPOSITION, "inline; filename=\"referee_photo.png\"")
                     .body(resource);
         } catch (IOException e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
@@ -75,9 +75,6 @@ public class RefereeController {
     @GetMapping("/{id}/matches")
     public ResponseEntity<Integer> getRefereeMatches(@PathVariable Integer id) {
         Integer matchesCount = refereeService.getRefereeMatchesCount(id).size();
-        if (matchesCount == null) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(0);
-        }
         return ResponseEntity.ok(matchesCount);
     }
 
