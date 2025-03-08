@@ -1,3 +1,13 @@
+-- drop table cards;
+-- drop table goals;
+-- drop table matches;
+-- drop table pitch;
+-- drop table player;
+-- drop table referees;
+-- drop table standings;
+-- drop table teams;
+-- drop table users;
+-- drop table league;
 
 INSERT INTO teams (id, city_name, name, league_id, emblem_path) VALUES
                                                                     (1, 'Barcelona', 'FC Barcelona', 1, 'src/main/resources/static/Barcelona.png'),
@@ -81,27 +91,27 @@ INSERT INTO teams (id, city_name, name, league_id, emblem_path) VALUES
                                                                     (74, 'Brest', 'Stade Brestois', 5, 'src/main/resources/static/Brest.png'),
                                                                     (75, 'Metz', 'FC Metz', 5, 'src/main/resources/static/Metz.png');
 
-INSERT INTO referees (id, first_name, last_name) VALUES
-                                                     (1, 'Szymon', 'Marciniak'),
-                                                     (2, 'Pierluigi', 'Collina'),
-                                                     (3, 'Daniele', 'Orsato'),
-                                                     (4, 'Anthony', 'Taylor'),
-                                                     (5, 'Björn', 'Kuipers'),
-                                                     (6, 'Felix', 'Brych'),
-                                                     (7, 'Cüneyt', 'Çakır'),
-                                                     (8, 'Danny', 'Makkelie'),
-                                                     (9, 'Michael', 'Oliver'),
-                                                     (10, 'Carlos', 'Del Cerro Grande'),
-                                                     (11, 'Mateu', 'Lahoz'),
-                                                     (12, 'Gianluca', 'Rocchi'),
-                                                     (13, 'Nicola', 'Rizzoli'),
-                                                     (14, 'Sergei', 'Karasev'),
-                                                     (15, 'Clément', 'Turpin'),
-                                                     (16, 'William', 'Collum'),
-                                                     (17, 'Mark', 'Clattenburg'),
-                                                     (18, 'Damir', 'Skomina'),
-                                                     (19, 'Pavel', 'Kralovec'),
-                                                     (20, 'Andreas', 'Ekberg');
+INSERT INTO referees (id, first_name, last_name, emblem_path) VALUES
+                                                                  (1, 'Szymon', 'Marciniak', 'src/main/resources/static/referees/SzymonMarciniak.jpg'),
+                                                                  (2, 'Pierluigi', 'Collina', 'src/main/resources/static/referees/PierluigiCollina.jpg'),
+                                                                  (3, 'Daniele', 'Orsato', 'src/main/resources/static/referees/DanieleOrsato.jpg'),
+                                                                  (4, 'Anthony', 'Taylor', 'src/main/resources/static/referees/AnthonyTaylor.jpg'),
+                                                                  (5, 'Björn', 'Kuipers', 'src/main/resources/static/referees/BjornKuipers.jpg'),
+                                                                  (6, 'Felix', 'Brych', 'src/main/resources/static/referees/FelixBrych.jpg'),
+                                                                  (7, 'Cüneyt', 'Çakır', 'src/main/resources/static/referees/CüneytÇakır.jpg'),
+                                                                  (8, 'Danny', 'Makkelie', 'src/main/resources/static/referees/DannyMakkelie.jpg'),
+                                                                  (9, 'Michael', 'Oliver', 'src/main/resources/static/referees/MichaelOliver.jpg'),
+                                                                  (10, 'Carlos', 'Del Cerro Grande', 'src/main/resources/static/referees/CarlosDelCerroGrande.jpg'),
+                                                                  (11, 'Mateu', 'Lahoz', 'src/main/resources/static/referees/MateuLahoz.jpg'),
+                                                                  (12, 'Gianluca', 'Rocchi', 'src/main/resources/static/referees/GianlucaRocchi.jpg'),
+                                                                  (13, 'Nicola', 'Rizzoli', 'src/main/resources/static/referees/NicolaRizzoli.jpg'),
+                                                                  (14, 'Sergei', 'Karasev', 'src/main/resources/static/referees/SergeiKarasev.jpg'),
+                                                                  (15, 'Clément', 'Turpin', 'src/main/resources/static/referees/ClementTurpin.jpg'),
+                                                                  (16, 'William', 'Collum', 'src/main/resources/static/referees/WilliamCollum.jpg'),
+                                                                  (17, 'Mark', 'Clattenburg', 'src/main/resources/static/referees/MarkClattenburg.jpg'),
+                                                                  (18, 'Damir', 'Skomina', 'src/main/resources/static/referees/DamirSkomina.jpg'),
+                                                                  (19, 'Pavel', 'Kralovec', 'src/main/resources/static/referees/PavelKralovec.jpg'),
+                                                                  (20, 'Andreas', 'Ekberg', 'src/main/resources/static/referees/AndreasEkberg.jpg');
 
 -- Ligi
 INSERT INTO league (id, category, end_date, name, season, start_date) VALUES
@@ -145,7 +155,8 @@ INSERT INTO matches (id, match_date, team1_score, team2_score, league_id, pitch_
                                                                                                                         (17, '2025-03-12', 3, 2, 1, 3, 18, 21, 22),
                                                                                                                         (18, '2025-03-13', 2, 1, 1, 4, 19, 23, 24),
                                                                                                                         (19, '2025-03-14', 1, 4, 1, 5, 20, 25, 26),
-                                                                                                                        (20, '2025-03-15', 3, 0, 1, 1, 20, 27, 28);
+                                                                                                                        (20, '2025-03-15', 3, 0, 1, 1, 20, 27, 28),
+                                                                                                                        (21, '2025-06-15', 1, 0, 1, 1, 1, 1, 2);
 
 INSERT INTO player (id, name, team_id, position, number, photo_path, nationality) VALUES
                                                                                       (1, 'Marc-André ter Stegen', 1, 'Goalkeeper', 1, 'src/main/resources/static/terstegen.png', 'Germany'),
